@@ -1,6 +1,6 @@
-package main;
+package a_game.src.main;
 
-import graphics.Window;
+import a_game.src.graphics.Window;
 
 public class GameLoop implements Runnable {
 
