@@ -1,5 +1,7 @@
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL13;
+
+import java.io.BufferedInputStream;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 
@@ -14,9 +16,10 @@ public class Texture {
     }
 
     private void loadTexture(String filePath) {
-        File file = new File(filePath);
-        if (!file.exists()) {
-            throw new RuntimeException("Texture file not found: " + filePath);
+        try (org.newdawn.slick.opengl.Texture texture = TextureLoader.getTexture(filePath)) {
+            textureID = texture.getTextureID();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
