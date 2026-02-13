@@ -1,6 +1,6 @@
-import textures.Texture;
-import utils.Vector2f;
-import utils.Vector3f;
+import graphics.Texture;
+import tools.Vector2f;
+import tools.Vector3f;
 
 package meshes;
 
