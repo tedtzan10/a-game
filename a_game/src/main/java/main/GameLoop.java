@@ -22,20 +22,31 @@ public class GameLoop implements Runnable {
     }
 
     private void render() {
-        
         // Render game here
         
 
         Window.swapBuffers();
     }
 
+    private void init() {
+        // Initialize game here
+    }
+
+    private void close() {
+        // Clean up resources here
+        Window.close();
+    }
+
     @Override
     public void run() {
+        init();
          
         while (Window.isOpen()) {
             update();
             render();
         }
+
+        close();
     }
     
 }
