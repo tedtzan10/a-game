@@ -1,4 +1,4 @@
-package graphics;
+package main;
 
 public class Window {
     private static long windowHandle;
