@@ -1,0 +1,1 @@
+This represents the player which holds the camera, an Instance (might not even be used), and methods for controlling the player.

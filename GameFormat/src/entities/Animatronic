@@ -1,0 +1,2 @@
+Most likely an abstract class for when I make the individual classes for the actual animatronics or each animatronic will just come straight from this class where I'd have 
+variables like path, restart point, and it would extend Instance or Entity if I even make that class
